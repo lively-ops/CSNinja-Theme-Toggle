@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSNinja Theme Toggler</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #f1f1f1;
+            width: 250px;
+            padding: 20px;
+            border-radius: 0px;
+            box-shadow: 0px 4px 12px rgb(214, 230, 255);
+        }
+
+        h3 {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        /* Button styles */
+        #toggle {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            text-align: center;
+            background-color: #0051ff;
+            color: white;
+            border: none;
+            border-radius: 0px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #toggle:hover {
+            background-color: #013db6;
+        }
+
+        #toggle:focus {
+            outline: none;
+        }
+
+        /* Additional styling for spacing and text */
+        .popup-content {
+            text-align: center;
+        }
+
+        .loading-text {
+            color: #bcd2ff;
+        }
+    </style>
+</head>
+<body>
+<div class="popup-content">
+    <img src="./images/icon128.png" alt="CSNinja Logo" width="80" height="80" />
+    <h3>CSNinja Theme Toggler ;)</h3>
+    <button id="toggle" class="loading-text">Loading...</button>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
